@@ -57,9 +57,10 @@ claude plugin install nick-fury-team --scope user
 
 ```bash
 claude plugin list
-claude plugin details nick-fury-team
 claude plugin marketplace list
 ```
+
+在 `claude plugin list` 中看到 `nick-fury-team@nick-fury-marketplace` 且状态为 `✔ enabled`，即表示插件已加载成功。
 
 ### 方式二：本地路径安装 / 开发调试
 

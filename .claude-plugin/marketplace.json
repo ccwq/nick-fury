@@ -13,7 +13,7 @@
       "name": "nick-fury-team",
       "description": "16 independent role skills plus slash commands, with Nick Fury orchestration.",
       "source": "./",
-      "strict": false,
+      "strict": true,
       "skills": [
         "./skills/nick-fury",
         "./skills/yingyan",
