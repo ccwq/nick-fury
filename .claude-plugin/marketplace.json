@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "nick-fury-team",
-      "description": "15 independent role skills plus slash commands, with Nick Fury orchestration.",
+      "description": "16 independent role skills plus slash commands, with Nick Fury orchestration.",
       "source": "./",
       "strict": false,
       "skills": [
@@ -25,6 +25,7 @@
         "./skills/franky",
         "./skills/yibixi",
         "./skills/hailuo",
+        "./skills/xier",
         "./skills/shaobing",
         "./skills/xie",
         "./skills/hupan",
