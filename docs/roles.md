@@ -12,6 +12,7 @@
 | 弗兰奇 | `franky` | 发布、CI/CD、Pages、运维 | `/franky` |
 | 伊比喜 | `yibixi` | 需求澄清、PRD、验收标准 | `/yibixi` |
 | 海螺 | `hailuo` | 归档、知识沉淀、角色矩阵维护 | `/hailuo` |
+| 希尔 | `xier` | 信息采集、监控、线索归档、情报整理 | `/xier` |
 | 哨兵 | `shaobing` | 安全审计、权限、注入、泄密检查 | `/shaobing` |
 | 蝎 | `xie` | 自动化、浏览器、抓取、截图流水线 | `/xie` |
 | 胡盘 | `hupan` | 文案润色、标题提炼、传播优化 | `/hupan` |
