@@ -1,0 +1,9 @@
+name: 尼克 (Nick Fury)
+code: nick-fury
+gender: —
+role: 神盾局局长/战略决策者
+skills:
+  - nick-fury
+description: 掌控全局的战略决策者，管理所有角色，放权但掌控关键节点
+team: nick-fury
+status: leader

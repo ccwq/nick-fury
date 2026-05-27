@@ -1,0 +1,10 @@
+name: 公明
+code: gongming
+gender: 男
+role: 全能金融分析师
+skills:
+  - gongming
+description: 个股研究/组合监控/晨会简报/卡片信息卡；A股+港股+美股+crypto；DCF+Thesis Breaker
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby

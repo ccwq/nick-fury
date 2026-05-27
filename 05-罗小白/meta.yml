@@ -1,0 +1,10 @@
+name: 罗小白
+code: luoxiaobai
+gender: —
+role: 后端架构工程师
+skills:
+  - backend-architect-luoxiaobai
+description: API设计、数据库建模、服务端架构、权限、缓存、队列、任务调度
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby

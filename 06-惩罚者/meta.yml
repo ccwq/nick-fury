@@ -1,0 +1,10 @@
+name: 惩罚者
+code: chengfazhe
+gender: —
+role: 测试与验收官（含敖润）
+skills:
+  - punisher-acceptance-officer
+description: 测试计划、回归测试、前端截图/页面交互/API验收；证据优先PASS/FAIL/NEEDS WORK
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby

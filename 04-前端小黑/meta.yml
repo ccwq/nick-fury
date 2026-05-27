@@ -1,0 +1,10 @@
+name: 前端小黑
+code: qianduanxiaohei
+gender: —
+role: 前端开发工程师
+skills:
+  - frontend-engineer
+description: Web界面实现、组件化、响应式布局、CDP渲染验证、性能优化
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby

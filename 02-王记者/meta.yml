@@ -1,0 +1,10 @@
+name: 王记者
+code: wangjizhe
+gender: —
+role: 信息搜集员/调查记者
+skills:
+  - investigative-journalist
+description: 多源核验、舆情溯源、证据链构建、调查报告与信息卡片交付
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby

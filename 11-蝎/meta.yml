@@ -1,0 +1,10 @@
+name: 蝎
+code: xie
+gender: —
+role: 自动化工程师
+skills:
+  - xie-automation-engineer
+description: 浏览器自动化、CDP截图流水线、定时查询、自动抓取、工具链封装
+team: nick-fury
+leader: 尼克 (Nick Fury)
+status: standby
