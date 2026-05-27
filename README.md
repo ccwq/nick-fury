@@ -62,6 +62,68 @@ claude plugin marketplace list
 
 在 `claude plugin list` 中看到 `nick-fury-team@nick-fury-marketplace` 且状态为 `✔ enabled`，即表示插件已加载成功。
 
+### 已添加过 marketplace 时的更新安装
+
+如果你之前已经执行过 `marketplace add`，再次执行会提示：
+
+```text
+Marketplace 'nick-fury-marketplace' already on disk — declared in user settings
+```
+
+这不是错误，只表示市场源已经存在。但此时本地 marketplace 缓存可能还是旧版本，所以需要先更新缓存，再安装或重装插件：
+
+```bash
+claude plugin marketplace update nick-fury-marketplace
+claude plugin install nick-fury-team@nick-fury-marketplace --scope user
+claude plugin list
+```
+
+如果之前安装过失败版本，建议先卸载再重装：
+
+```bash
+claude plugin marketplace update nick-fury-marketplace
+claude plugin uninstall nick-fury-team --scope user --prune --yes
+claude plugin install nick-fury-team@nick-fury-marketplace --scope user
+claude plugin list
+```
+
+如果卸载时提示 `Plugin "nick-fury-team" not found in installed plugins`，说明当前没有可卸载的已安装实例，可以直接继续执行安装命令。
+
+### 我们这次踩过的坑
+
+你的第一次安装失败，核心原因不是安装命令本身，而是插件市场清单的写法有冲突。
+
+当 `.claude-plugin/marketplace.json` 的插件条目中声明了 `skills`，同时插件目录里又有 `.claude-plugin/plugin.json` 时，Claude Code 会认为 marketplace entry 和 plugin manifest 都在声明组件。若 marketplace entry 使用 `strict: false`，就会报：
+
+```text
+Plugin nick-fury-team has conflicting manifests: both plugin.json and marketplace entry specify components.
+Set strict: true in marketplace entry or remove component specs from one location.
+```
+
+现在已经修复为：
+
+```json
+"strict": true
+```
+
+这个设置的含义是：以 marketplace entry 中声明的组件为准，允许它和插件自身的 `plugin.json` 共存，不再产生组件声明冲突。
+
+### 另一处命令差异
+
+某些 Claude Code 版本中 `claude plugin details nick-fury-team` 可用，但你的环境返回：
+
+```text
+error: unknown command 'details'
+```
+
+所以 README 不再把 `details` 作为必需验证命令。统一使用下面两个命令验证：
+
+```bash
+claude plugin list
+claude plugin marketplace list
+```
+
+
 ### 方式二：本地路径安装 / 开发调试
 
 先克隆仓库：
