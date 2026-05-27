@@ -1,0 +1,9 @@
+{
+  "name": "nick-fury-team",
+  "description": "Nick Fury Team plugin that exposes 15 specialized role skills and slash commands for orchestration, research, product, engineering, testing, security, automation, design, publishing, finance, and knowledge curation.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Nick Fury Team",
+    "email": "support@example.com"
+  }
+}

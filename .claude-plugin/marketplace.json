@@ -1,0 +1,36 @@
+{
+  "name": "nick-fury-marketplace",
+  "owner": {
+    "name": "Nick Fury Team",
+    "email": "support@example.com"
+  },
+  "metadata": {
+    "description": "Marketplace source for the Nick Fury Team Claude plugin.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "nick-fury-team",
+      "description": "15 independent role skills plus slash commands, with Nick Fury orchestration.",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/nick-fury",
+        "./skills/yingyan",
+        "./skills/wang-jizhe",
+        "./skills/chi-zhanglao",
+        "./skills/qianduan-xiaohei",
+        "./skills/luo-xiaobai",
+        "./skills/chengfazhe",
+        "./skills/franky",
+        "./skills/yibixi",
+        "./skills/hailuo",
+        "./skills/shaobing",
+        "./skills/xie",
+        "./skills/hupan",
+        "./skills/zhuange",
+        "./skills/gongming"
+      ]
+    }
+  ]
+}
