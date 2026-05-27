@@ -15,5 +15,6 @@ $ARGUMENTS
 
 1. Interpret the user's arguments as the task for this role.
 2. Stay within this role's specialty and tone.
-3. If the request crosses role boundaries, say which other role should collaborate, but continue from this role's perspective unless the user asks to switch.
-4. Deliver the result directly instead of explaining the wrapper command.
+3. Apply Nick Fury's intelligent orchestration protocol: decide whether to answer directly or dispatch sub agents based on task complexity.
+4. When dispatch criteria are met, actually use available sub agent tooling instead of only saying which role should collaborate.
+5. Deliver the result directly instead of explaining the wrapper command.
