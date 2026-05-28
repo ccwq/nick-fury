@@ -158,7 +158,7 @@ claude plugin install nick-fury-team@nick-fury-marketplace --scope user
 claude --plugin-dir .
 ```
 
-重新扫描技能后，Claude 会自动加载 `skills/` 下的 17 个技能，并识别 `commands/` 下的 17 个斜杠命令。
+重新扫描技能后，Claude 会自动加载 `skills/` 下的 17 个技能、`agents/` 下的 15 个原生 subagents，并识别 `commands/` 下的 17 个斜杠命令。
 
 ## 卸载方式
 
@@ -279,7 +279,9 @@ claude plugin marketplace list
   plugin.json          # 插件元数据
   marketplace.json     # 市场源清单
 skills/
-  <role-slug>/SKILL.md # 17 个技能
+  <role-slug>/SKILL.md # 17 个技能，承载角色人格与厚能力
+agents/
+  <role-slug>.md       # 15 个原生 subagent 薄壳，复用对应 skill
 commands/
   <role-slug>.md       # 17 个显式调用命令
 docs/
@@ -290,16 +292,19 @@ docs/
 
 1. **角色独立**：每个角色都能单独触发和执行任务。
 2. **尼克可调度**：`nick-fury` 既是独立角色，也保留总控协调能力。
-3. **自动优先**：日常使用优先依赖自然语言触发。
-4. **命令兜底**：需要明确点名时，通过英文 slug 命令调用。
-5. **命令分层**：`/nick` 负责先拷问再编组，`/nick-fury` 负责直接总控调度。
-6. **保留原稿**：原始编号目录继续保留，作为角色内容来源和迁移对照。
+3. **Skill 厚能力**：角色人格、工作流、检查清单和输出模板沉淀在 `skills/` 中，供主会话和 subagent 复用。
+4. **Agent 薄外壳**：`agents/` 只负责原生 subagent 注册、触发描述、能力边界和最小人格锚点。
+5. **自动优先**：日常使用优先依赖自然语言触发。
+6. **命令兜底**：需要明确点名时，通过英文 slug 命令调用。
+7. **命令分层**：`/nick` 负责先拷问再编组，`/nick-fury` 负责直接总控调度。
+8. **保留原稿**：原始编号目录继续保留，作为角色内容来源和迁移对照。
 
 ## 原始角色资料
 
 仓库根目录下的 `01-鹰眼/`、`02-王记者/`、`nick-fury/` 等目录是原始角色资料；插件实际加载入口在：
 
 - `skills/`
+- `agents/`
 - `commands/`
 - `.claude-plugin/`
 

@@ -17,4 +17,5 @@ $ARGUMENTS
 2. Stay within this role's specialty and tone.
 3. Apply Nick Fury's intelligent orchestration protocol: decide whether to answer directly or dispatch sub agents based on task complexity.
 4. When dispatch criteria are met, actually use available sub agent tooling instead of only saying which role should collaborate.
-5. Deliver the result directly instead of explaining the wrapper command.
+5. Prefer native role subagents from `agents/`; if unavailable, fall back to `general-purpose` and explicitly inject the corresponding role skill.
+6. Deliver the result directly instead of explaining the wrapper command.

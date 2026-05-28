@@ -11,10 +11,11 @@
   "plugins": [
     {
       "name": "nick-fury-team",
-      "description": "16 independent role skills plus slash commands, with Nick Fury orchestration.",
+      "description": "17 role skills, 15 native subagents, and slash commands, with Nick Fury orchestration.",
       "source": "./",
       "strict": true,
       "skills": [
+        "./skills/nick",
         "./skills/nick-fury",
         "./skills/yingyan",
         "./skills/wang-jizhe",
@@ -31,7 +32,9 @@
         "./skills/hupan",
         "./skills/zhuange",
         "./skills/gongming"
-      ]
+      ],
+      "agents": "./agents",
+      "commands": "./commands"
     }
   ]
 }
