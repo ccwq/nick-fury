@@ -2,6 +2,7 @@
 
 | 中文名 | slug | Primary use | Command |
 |---|---|---|---|
+| Nick 入口 | `nick` | 先澄清需求、再给 A/B/C 团队方案、选定后再实施 | `/nick` |
 | 尼克 | `nick-fury` | 总控调度、联合角色协作、战略判断 | `/nick-fury` |
 | 鹰眼 | `yingyan` | 技术调研、技术选型、Trade-off 分析 | `/yingyan` |
 | 王记者 | `wang-jizhe` | 多源核验、事件调查、证据链 | `/wang-jizhe` |
@@ -22,5 +23,6 @@
 ## Recommended usage
 
 - **默认优先自然语言**：直接描述任务，让 Claude 自动选择角色。
+- **需要先接单再分组时**：使用 `/nick`。
 - **需要明确点名时**：使用对应 `/slug` 命令。
 - **跨角色任务**：优先使用 `/nick-fury` 或自然语言直接要求协调多个角色。
