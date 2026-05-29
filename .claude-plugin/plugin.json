@@ -1,12 +1,11 @@
 {
   "name": "nick-fury-team",
-  "description": "Nick Fury Team plugin that exposes 17 specialized skills, 15 native subagents, and slash commands for structured dispatch, orchestration, research, intelligence collection, product, engineering, testing, security, automation, design, publishing, finance, and knowledge curation.",
+  "description": "Nick Fury Team plugin that exposes 17 specialized skills and slash commands for structured dispatch, orchestration, research, intelligence collection, product, engineering, testing, security, automation, design, publishing, finance, and knowledge curation.",
   "version": "1.0.0",
   "author": {
     "name": "Nick Fury Team",
     "email": "support@example.com"
   },
   "commands": "./commands",
-  "agents": "./agents",
   "skills": "./skills"
 }
