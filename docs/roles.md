@@ -2,8 +2,8 @@
 
 | 中文名 | slug | Primary use | Command | Native subagent |
 |---|---|---|---|---|
-| Nick 入口 | `nick` | 先澄清需求、再给 A/B/C 团队方案、选定后再实施 | `/nick` | — |
-| 尼克 | `nick-fury` | 总控调度、联合角色协作、战略判断 | `/nick-fury` | — |
+| Nick 入口 | `nick` | 先澄清需求、给 A/B/C 团队方案、用户选定后强制进入真实 Agent-first 调度；不能退化为单人执行 | `/nick` | — |
+| 尼克 | `nick-fury` | 直接总控调度、联合角色协作、战略判断；满足条件时必须实际调用 subagents | `/nick-fury` | — |
 | 鹰眼 | `yingyan` | 技术调研、技术选型、Trade-off 分析 | `/yingyan` | `agents/yingyan.md` |
 | 王记者 | `wang-jizhe` | 多源核验、事件调查、证据链 | `/wang-jizhe` | `agents/wang-jizhe.md` |
 | 池长老 | `chi-zhanglao` | 多项目统筹、资源编排、制作人视角 | `/chi-zhanglao` | `agents/chi-zhanglao.md` |
@@ -23,6 +23,6 @@
 ## Recommended usage
 
 - **默认优先自然语言**：直接描述任务，让 Claude 自动选择角色。
-- **需要先接单再分组时**：使用 `/nick`。
+- **需要先接单再分组时**：使用 `/nick`，它会先澄清、再给 A/B/C，选定后进入真实 Agent-first 调度。
 - **需要明确点名时**：使用对应 `/slug` 命令。
-- **跨角色任务**：优先使用 `/nick-fury` 或自然语言直接要求协调多个角色。
+- **跨角色任务**：优先使用 `/nick-fury` 或自然语言直接要求协调多个角色；满足分派条件时应实际调用 subagents，而不是口头协作。
